@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/mmmbiscuits/SassyCatchPhrases.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/EXAMPLE'
 
-   s.platform     = :ios, '7.0'
-   s.ios.deployment_target = '7.0'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  #s.source_files = 'Classes'
+  s.source_files = 'Classes'
   s.resources = 'Resources/libSassyCatchPhrases.a'
 
-  #s.ios.exclude_files = 'Classes/osx'
+  s.ios.exclude_files = 'Classes/osx'
   #s.osx.exclude_files = 'Classes/ios'
   s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
