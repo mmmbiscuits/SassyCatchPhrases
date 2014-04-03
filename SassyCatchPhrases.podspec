@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  #s.source_files = 'Classes/ios/*.h'
+  s.source_files = 'Classes/ios/*.h'
   s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
