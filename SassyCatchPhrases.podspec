@@ -21,12 +21,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes/ios'
+  s.source_files = 'Classes/ios/*.h'
   s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
   #s.osx.exclude_files = 'Classes/ios'
   s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  # s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/SassyCatchPhrases"','HEADER_SEARCH_PATHS' => '$(SDKROOT)/Classes/**/*.h' }
 
 end
