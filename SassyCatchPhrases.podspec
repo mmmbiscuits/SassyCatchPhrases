@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
   #s.osx.exclude_files = 'Classes/ios'
   s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/SassyCatchPhrases"','HEADER_SEARCH_PATHS' => '$(SDKROOT)/Classes/**/*.h' }
+  # s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/"','HEADER_SEARCH_PATHS' => '$(SDKROOT)/Classes/**/*.h' }
 
 end
