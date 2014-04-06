@@ -15,14 +15,17 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Ryan Smale" => "eagle14@gmail.com" }
   s.source           = { :git => "https://github.com/mmmbiscuits/SassyCatchPhrases.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.social_media_url = 'https://twitter.com/mmmbiscuits'
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
   s.source_files = 'Classes/ios/*.h'
-  s.resources = 'Resources/libSassyCatchPhrases.a'
+  s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
+  s.library = 'libSassyCatchPhrases'
+
+  #s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'
@@ -30,6 +33,8 @@ Pod::Spec.new do |s|
   
   s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
   s.library = 'SassyCatchPhrases', 'z'
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/ProjectFolder/LibraryFolder' }    
+
   #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TestFlightSDK"' }
   # s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/"','HEADER_SEARCH_PATHS' => '$(SDKROOT)/Classes/**/*.h' }
 
