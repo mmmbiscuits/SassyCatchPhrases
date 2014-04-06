@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes/ios/*.h'
+  s.public_header_files = 'Classes/ios/*.h'
+
   s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
   s.library = 'libSassyCatchPhrases'
 
