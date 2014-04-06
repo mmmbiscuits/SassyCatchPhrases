@@ -25,11 +25,10 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
   s.library = 'libSassyCatchPhrases'
 
-  #s.resources = 'Resources/libSassyCatchPhrases.a'
+  s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
   
   s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
   s.library = 'SassyCatchPhrases', 'z'
