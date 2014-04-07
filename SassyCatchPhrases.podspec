@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/ios/*.h'
   s.public_header_files = 'Classes/ios/*.h'
 
-  s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
+  s.preserve_paths = 'libSassyCatchPhrases.a'
   s.library = 'libSassyCatchPhrases'
 
-  s.resources = 'Resources/libSassyCatchPhrases.a'
+  #s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'
