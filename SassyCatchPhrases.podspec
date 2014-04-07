@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/ios/*.h'
   s.public_header_files = 'Classes/ios/*.h'
 
-  s.library = 'libSassyCatchPhrases'
+  s.library = 'SassyCatchPhrases'
 
   #s.resources = 'Resources/libSassyCatchPhrases.a'
 
