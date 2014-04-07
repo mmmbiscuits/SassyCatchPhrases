@@ -1,4 +1,3 @@
-
 Pod::Spec.new do |s|
   s.name             = "SassyCatchPhrases"
   s.version          = "0.1.0"
@@ -24,16 +23,15 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/ios/*.h'
   s.public_header_files = 'Classes/ios/*.h'
 
-  s.library = 'SassyCatchPhrases'
-
   s.resources = 'Resources/libSassyCatchPhrases.a'
 
   s.ios.exclude_files = 'Classes/osx'
   s.public_header_files = 'Classes/**/*.h'
   
-  #s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
-  s.library = 'SassyCatchPhrases'
-  
+  s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
+  #s.library = 'libSassyCatchPhrases'
+  #s.library = 'SassyCatchPhrases'
+
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/SassyCatchPhrases/' }    
 
   #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TestFlightSDK"' }
