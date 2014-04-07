@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/**/*.h'
   
   s.preserve_paths = 'Resources/libSassyCatchPhrases.a'
-  s.library = 'SassyCatchPhrases', 'z'
+  #s.library = 'SassyCatchPhrases', 'z'
   #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/SassyCatchPhrases/' }    
 
   #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TestFlightSDK"' }
